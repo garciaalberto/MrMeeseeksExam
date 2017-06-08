@@ -13,13 +13,19 @@ public class AppTest {
 		ArrayList<MrMeeseeks> listOfMeeseeks = new ArrayList<MrMeeseeks>();
 		BoxMrMeeseeks box = new BoxMrMeeseeks();
 		box.pushButton(listOfMeeseeks);
-		assertEquals(listOfMeeseeks.get(0).getId(), 1002);
-		// THis prints the creation message of the Meeseeks
+		assertEquals(listOfMeeseeks.get(0).getId(), 1001);
+		// This prints the creation message of the Meeseeks
 	}
 	
 	@Test
 	public void testMeeseeksRequest(){
 		MrMeeseeks meeseeks = new MrMeeseeks();
 		assertEquals(meeseeks.doRequest("Open", "jar"), "Open jar");
+	}
+	
+	@Test
+	public void testGenerateMessageOnRequest(){
+		MrMeeseeks meeseeks = new MrMeeseeks();
+		System.out.println(meeseeks.generateMessageOnRequest());
 	}
 }
