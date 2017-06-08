@@ -16,9 +16,5 @@ public class AppTest {
 	public void testMeeseeksRequest(){
 		MrMeeseeks meeseeks = new MrMeeseeks();
 		assertEquals(meeseeks.doRequest("Open", "jar"), "Open jar");
-	}
-	
-	
-	
-	*/
+	}*/
 }

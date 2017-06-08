@@ -16,6 +16,17 @@ public class App {
 		}
 	}
 	
+	public static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMe, int id){
+		ArrayList<MrMeeseeks> toRemove = new ArrayList<MrMeeseeks>();
+		for (MrMeeseeks meeseeks : setMrMe){
+			if (id == meeseeks.getId()){
+				meeseeks.stopExisting();
+				toRemove.add(meeseeks);
+			}
+		}
+		setMrMe.removeAll(toRemove);	
+	}
+	
 	public static void main( String[] args ){
         
 		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
@@ -44,12 +55,12 @@ public class App {
 		System.out.println();
 		
 		collectIds(setMrMe, ids);
-		/*
+		
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
 		}
-		*/
+		
 	    }
 		/* explodeMrMeeseeks(setMrMe, id)
 		 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido

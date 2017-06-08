@@ -1,5 +1,6 @@
 package org.foobarspam.ProxyPattern.MrMeeseks;
 
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MrMeeseeks implements Doable{
@@ -7,8 +8,9 @@ public class MrMeeseeks implements Doable{
 	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
 	private Integer id;
 	
-	private String messageOnRequest = "Oooh yeah! Can dooo!";
+	private String[] messageOnRequest = new String[]{"Oooh yeah! Can dooo!", "Oh, yeah! Yes, ma'am!", "Yes, Siree!", "Ohhhh Okay"};
 	private String messageOnDone = "All done!";
+	private String messageOnExplode = "Pooooof ";
 			
 	public MrMeeseeks(){
 		this.id = ID_GENERATOR.incrementAndGet();
@@ -27,8 +29,9 @@ public class MrMeeseeks implements Doable{
 		return request;
 	}
 	public void SayMessageOnRequest(){
-		System.out.println(this.messageOnRequest);
+		System.out.println(this.messageOnRequest[ThreadLocalRandom.current().nextInt(0, this.messageOnRequest.length)]);
 	}
+
 	public void SayMessageOnDone(){
 		System.out.println(this.messageOnDone);
 	}
@@ -42,6 +45,10 @@ public class MrMeeseeks implements Doable{
 	public void doRequest(Object action, Object object) {
 		// ???
 		
+	}
+
+	public void stopExisting() {
+		System.out.println(this.messageOnExplode + this.getId());	
 	}
 
 }
