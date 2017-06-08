@@ -60,10 +60,5 @@ public class App {
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
 		}
-		
-	    }
-		/* explodeMrMeeseeks(setMrMe, id)
-		 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido
-		 */	
-
+	}
 }

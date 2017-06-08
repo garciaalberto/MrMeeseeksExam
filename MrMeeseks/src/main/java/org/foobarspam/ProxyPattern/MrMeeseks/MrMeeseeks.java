@@ -29,7 +29,12 @@ public class MrMeeseeks implements Doable{
 		return request;
 	}
 	public void SayMessageOnRequest(){
-		System.out.println(this.messageOnRequest[ThreadLocalRandom.current().nextInt(0, this.messageOnRequest.length)]);
+		System.out.println(generateMessageOnRequest());
+	}
+	
+	public String generateMessageOnRequest(){
+		String message =this.messageOnRequest[ThreadLocalRandom.current().nextInt(0, this.messageOnRequest.length)];
+		return message;
 	}
 
 	public void SayMessageOnDone(){
@@ -41,14 +46,13 @@ public class MrMeeseeks implements Doable{
 		System.out.println(doRequest(action, object));
 		SayMessageOnDone();
 	}
-
-	public void doRequest(Object action, Object object) {
-		// ???
-		
+	
+	public void sayMessageOnExplode(){
+		System.out.println(this.messageOnExplode + this.getId());
 	}
 
 	public void stopExisting() {
-		System.out.println(this.messageOnExplode + this.getId());	
+		sayMessageOnExplode();
 	}
 
 }
