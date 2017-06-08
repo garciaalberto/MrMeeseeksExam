@@ -2,14 +2,19 @@ package org.foobarspam.ProxyPattern.MrMeeseks;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class AppTest {
 	
 	@Test
-	public void testMeeseeksCreation(){
-		MrMeeseeks meeseeks = new MrMeeseeks();
-		assertEquals(meeseeks.getId(), 1001);
+	public void testBoxMeeseeksCreation(){
+		ArrayList<MrMeeseeks> listOfMeeseeks = new ArrayList<MrMeeseeks>();
+		BoxMrMeeseeks box = new BoxMrMeeseeks();
+		box.pushButton(listOfMeeseeks);
+		assertEquals(listOfMeeseeks.get(0).getId(), 1002);
+		// THis prints the creation message of the Meeseeks
 	}
 	
 	@Test
