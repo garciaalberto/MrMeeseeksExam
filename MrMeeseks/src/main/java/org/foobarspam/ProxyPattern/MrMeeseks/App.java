@@ -6,7 +6,7 @@ public class App {
 	
 	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
 		if (setMrMe.isEmpty()){
-			System.out.println("There are no Mr Meeseeks created");
+			System.out.println("There are no Meeseeks avaiable now, consider pressing the button");
 		}
 		for (MrMeeseeks meeseeks : setMrMe){
 			System.out.print(meeseeks.getId() + "\n");
@@ -34,7 +34,6 @@ public class App {
         
 		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
 		ArrayList<Integer> ids = new ArrayList<Integer>();
-		// Crea una estructura de datos llamada ids donde almacenar los ids de los Mr Meeseeks creados
 		        
 		BoxMrMeeseeks box = new BoxMrMeeseeks();
 		       

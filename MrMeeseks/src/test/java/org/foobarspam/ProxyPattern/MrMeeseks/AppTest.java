@@ -1,11 +1,11 @@
 package org.foobarspam.ProxyPattern.MrMeeseks;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 public class AppTest {
-	/*
+	
 	@Test
 	public void testMeeseeksCreation(){
 		MrMeeseeks meeseeks = new MrMeeseeks();
@@ -17,8 +17,4 @@ public class AppTest {
 		MrMeeseeks meeseeks = new MrMeeseeks();
 		assertEquals(meeseeks.doRequest("Open", "jar"), "Open jar");
 	}
-	
-	
-	
-	*/
 }
