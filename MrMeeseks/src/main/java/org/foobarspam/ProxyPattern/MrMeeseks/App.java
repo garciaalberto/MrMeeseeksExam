@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class App {
 	
 	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
+		if (setMrMe.isEmpty()){
+			System.out.println("There are no Mr Meeseeks created");
+		}
 		for (MrMeeseeks meeseeks : setMrMe){
 			System.out.print(meeseeks.getId() + "\n");
 		}
@@ -60,5 +63,9 @@ public class App {
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
 		}
+		System.out.println();
+		
+		System.out.println("Lista de Meeseeks:");
+		listMrMeeseeks(setMrMe);
 	}
 }

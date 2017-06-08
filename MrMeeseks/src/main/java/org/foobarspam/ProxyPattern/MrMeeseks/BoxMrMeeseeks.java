@@ -8,12 +8,12 @@ public class BoxMrMeeseeks {
 	
 	public void pushButton(ArrayList<MrMeeseeks> listOfMeeseeks){
 		createMrMeeseeks(listOfMeeseeks);
-		getMrMe().sayMessageOnCreate();
 	}
 	
 	public void createMrMeeseeks(ArrayList<MrMeeseeks> listOfMeeseeks){
 		this.meeseeks = new MrMeeseeks();
 		listOfMeeseeks.add(getMrMe());
+		getMrMe().sayMessageOnCreate();
 	}
 	
 	public MrMeeseeks getMrMe(){

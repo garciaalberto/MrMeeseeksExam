@@ -15,7 +15,7 @@ public class AppTest {
 	@Test
 	public void testMeeseeksRequest(){
 		MrMeeseeks meeseeks = new MrMeeseeks();
-		assertEquals(meeseeks.doRequest("Open", "jar"), "");
+		assertEquals(meeseeks.doRequest("Open", "jar"), "Open jar");
 	}
 	
 	
