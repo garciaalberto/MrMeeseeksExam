@@ -10,6 +10,12 @@ public class App {
 		}
 	}
 	
+	public static void collectIds(ArrayList<MrMeeseeks> setMrMe, ArrayList<Integer> ids){
+		for (MrMeeseeks meeseeks : setMrMe){
+			ids.add(meeseeks.getId());
+		}
+	}
+	
 	public static void main( String[] args ){
         
 		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
@@ -36,20 +42,15 @@ public class App {
 		System.out.println("Estos son los Mr Meeseeks creados:");
 		listMrMeeseeks(setMrMe);
 		System.out.println();
-		/*
-		collectIds(setMrMe, ids);
 		
+		collectIds(setMrMe, ids);
+		/*
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
 		}
 		*/
 	    }
-
-		/* collectIds(setMrMe, ids)
-		 * Almacena en un array los ids de los Mr Meeseeks creados
-		 */
-
 		/* explodeMrMeeseeks(setMrMe, id)
 		 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido
 		 */	
