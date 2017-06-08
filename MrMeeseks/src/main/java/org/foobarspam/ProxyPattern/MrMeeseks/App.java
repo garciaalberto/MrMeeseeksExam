@@ -6,7 +6,7 @@ public class App {
 	
 	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
 		if (setMrMe.isEmpty()){
-			System.out.println("There are no Meeseeks avaiable now, consider pressing the button");
+			System.out.println("There are no Meeseeks avaiable now, consider pressing the button if you need one");
 		}
 		for (MrMeeseeks meeseeks : setMrMe){
 			System.out.print(meeseeks.getId() + "\n");
@@ -64,10 +64,12 @@ public class App {
 		}
 		System.out.println();
 		
+		// Esto es un Test sin JUnit para comprobar que la lista está vacía después de haber borrado todos los Meeseeks
 		System.out.println("Lista de Meeseeks:");
 		listMrMeeseeks(setMrMe);
 		System.out.println();
 		
+		// Esto no es un test
 		System.out.println();
 		System.out.println("        ___          ");
 		System.out.println("    . -^   `--,      ");
