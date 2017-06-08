@@ -67,5 +67,28 @@ public class App {
 		
 		System.out.println("Lista de Meeseeks:");
 		listMrMeeseeks(setMrMe);
+		System.out.println();
+		
+		System.out.println();
+		System.out.println("        ___          ");
+		System.out.println("    . -^   `--,      ");
+		System.out.println("   /# =========`-_   ");
+		System.out.println("  /# (--====___====\\ ");
+		System.out.println(" /#   .- --.  . --.| ");
+		System.out.println("/##   |  * ) (   * ),");
+		System.out.println("|##   \\    /\\ \\   / |");
+		System.out.println("|###   ---   \\ ---  |");
+		System.out.println("|####      ___)    #|");
+		System.out.println("|######           ##|");
+		System.out.println(" \\##### ---------- / ");
+		System.out.println("  \\####           (  ");
+		System.out.println("   `\\###          |  ");
+		System.out.println("     \\###         |  ");
+		System.out.println("      \\##        |   ");
+		System.out.println("       \\###.    .)   ");
+		System.out.println("        `======/   ");
+		System.out.println();
+		System.out.println("  |PASS ME THIS EXAM|");
+		
 	}
 }
