@@ -13,7 +13,7 @@ public class AppTest {
 		ArrayList<MrMeeseeks> listOfMeeseeks = new ArrayList<MrMeeseeks>();
 		BoxMrMeeseeks box = new BoxMrMeeseeks();
 		box.pushButton(listOfMeeseeks);
-		assertEquals(listOfMeeseeks.get(0).getId(), 1001);
+		assertEquals(listOfMeeseeks.get(0).getId(), 1002);
 		// This prints the creation message of the Meeseeks
 	}
 	
