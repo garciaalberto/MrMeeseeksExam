@@ -7,11 +7,13 @@ public class BoxMrMeeseeks {
 	private MrMeeseeks meeseeks;
 	
 	public void pushButton(ArrayList<MrMeeseeks> listOfMeeseeks){
-		
+		createMrMeeseeks(listOfMeeseeks);
+		getMrMe().sayMessageOnCreate();
 	}
 	
 	public void createMrMeeseeks(ArrayList<MrMeeseeks> listOfMeeseeks){
-		
+		this.meeseeks = new MrMeeseeks();
+		listOfMeeseeks.add(getMrMe());
 	}
 	
 	public MrMeeseeks getMrMe(){

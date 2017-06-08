@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class App {
 	
+	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
+		for (MrMeeseeks meeseeks : setMrMe){
+			System.out.print(meeseeks.getId() + "\n");
+		}
+	}
+	
 	public static void main( String[] args ){
         
 		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
@@ -30,22 +36,18 @@ public class App {
 		System.out.println("Estos son los Mr Meeseeks creados:");
 		listMrMeeseeks(setMrMe);
 		System.out.println();
-		
+		/*
 		collectIds(setMrMe, ids);
 		
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
 		}
-		
+		*/
 	    }
 
 		/* collectIds(setMrMe, ids)
 		 * Almacena en un array los ids de los Mr Meeseeks creados
-		 */
-
-		/* listMrMeeseeks(setMrMe)
-		 * Lista los ids de todos los Mr Meeseeks creados
 		 */
 
 		/* explodeMrMeeseeks(setMrMe, id)
