@@ -1,11 +1,16 @@
-public class AppAlumnado {
+package org.foobarspam.ProxyPattern.MrMeeseks;
+
+import java.util.ArrayList;
+
+public class App {
 	
 	public static void main( String[] args ){
         
-		// Crea una estructura de datos llamada setMrMe donde almacenar los Mr Meeseeks creados
+		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
+		ArrayList<Integer> ids = new ArrayList<Integer>();
 		// Crea una estructura de datos llamada ids donde almacenar los ids de los Mr Meeseeks creados
 		        
-		ProxyMrMeeseeks box = new ProxyMrMeeseeks();
+		BoxMrMeeseeks box = new BoxMrMeeseeks();
 		       
 		box.pushButton(setMrMe);
 		System.out.println("Open Jerry's stupid mayonnaise jar");
